@@ -1,0 +1,20 @@
+[
+  {
+    "Empleado_ID": 1,
+    "Nombre": "Juan Pérez",
+    "Dias_Disponibles": 10,
+    "Estado_Solicitud": "Pendiente"
+  },
+  {
+    "Empleado_ID": 2,
+    "Nombre": "María Gómez",
+    "Dias_Disponibles": 15,
+    "Estado_Solicitud": "Aprobada"
+  },
+  {
+    "Empleado_ID": 3,
+    "Nombre": "Nicolás Cerdán",
+    "Dias_Disponibles": 8,
+    "Estado_Solicitud": "Rechazada"
+  }
+]
