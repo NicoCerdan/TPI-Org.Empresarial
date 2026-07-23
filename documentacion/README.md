@@ -29,16 +29,44 @@ Este repositorio contiene la documentación y simulación del chatbot para la ge
 
 ## ⚙️ Requisitos
 - **Python 3.10** o superior  
-- No requiere librerías externas (solo funciones básicas de Python).  
+- Editor recomendado: Visual Studio Code
+- Sistema operativo: Windows, Linux o macOS  
 
 ---
 
-## ▶️ Instalación
+## ▶️ Instalación y Ejecución
 Clonar el repositorio:
 ```bash
 git clone https://github.com/NicoCerdan/TPI-Org.Empresarial.git
-cd TPI-Org.Empresarial
+cd TPI-Org.Empresarial/src
+python chatbot_simulacion.py
 ```
+El programa abrira un menu interactivo en consola:
+## Ejemplo de Ejecución
+--- MENÚ PRINCIPAL ---
+1. Registrar vacaciones (Empleado)
+2. Mostrar empleados
+3. Gestionar solicitudes (Supervisor)
+4. Salir
+
+Ingrese su nombre: Nico
+Ingrese la cantidad de días de vacaciones al año: 30
+Ingrese la cantidad de días que quiere usar: 7
+Ingrese la fecha de inicio (DD/MM/AAAA): 23/07/2026
+✅ Solicitud registrada para Nico del 23/07/2026 al 29/07/2026.
+
+
+Flujo típico:
+- El empleado ingresa sus días totales, días a usar y fecha de inicio.
+- El sistema calcula la fecha de fin y valida superposición.
+- El supervisor aprueba o rechaza la solicitud.
+- Tendra un camino feliz de validacion de controles y/o aprobacion de supervisor o camino infeliz de validacion de controles y/o desaprobacion de supervisor:
+
+Error: Nico solicitó más días de los que tiene disponibles.
+Error: formato de fecha incorrecto.
+❌ Error: las vacaciones se superponen con Juan (23/07/2026 - 29/07/2026).
+
+
 
 ### 📂 Contenido
 - **TPI.pdf** → Informe completo con análisis, BPMN, arquitectura y pruebas.
